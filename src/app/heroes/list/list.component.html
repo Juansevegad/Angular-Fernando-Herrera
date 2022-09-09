@@ -1,0 +1,31 @@
+<div style="display:flex; flex-direction:row; justify-content: space-around;">
+    <table>
+        <th>
+            <p>List of Heroes</p>
+        </th>
+        <tbody>
+            <td>
+                <tr *ngFor="let hero of heroes; let i = index">
+                    {{ i + 1 }} - {{ hero }}
+                </tr>
+            </td>
+        </tbody>
+    </table>
+
+    <button (click)="ereseHero()">Delete Hero</button>
+
+    <table>
+        <th *ngIf="deletedHeroes.length; else notDeleted">List of deleted Heroes</th>
+
+        <ng-template #notDeleted>
+            <th>No hero deleted yet</th>
+        </ng-template>
+        <tbody>
+            <td style="display:flex; justify-content:start;flex-direction:column">
+                <tr *ngFor="let deletedHero of deletedHeroes, let i = index">
+                    {{i + 1}} - {{ deletedHero }}
+                </tr>
+            </td>
+        </tbody>
+    </table>
+</div>
