@@ -1,5 +1,5 @@
 
-.[URL](ricknmortylist.netlify.app)
+[URL](http://ricknmortylist.netlify.app)
 
 # Bases
 
