@@ -1,5 +1,4 @@
-import { Component, Input } from '@angular/core';
-import { Character } from '../interfaces/rnm.interface';
+import { Component } from '@angular/core';
 import { RnmService } from '../services/rnm.service';
 
 @Component({

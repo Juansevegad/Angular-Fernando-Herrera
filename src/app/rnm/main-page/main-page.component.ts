@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Character } from '../interfaces/rnm.interface';
-import { RnmService } from '../services/rnm.service';
+import { Component } from '@angular/core';
 
 
 
